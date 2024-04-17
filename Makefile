@@ -70,7 +70,7 @@ go-get:
 
 .PHONY: run-app
 run-app:
-	@go run . --env=local
+	@go run . --env=local | sed G
 
 .PHONY: test-api-no-filter
 test-api-no-filter:
