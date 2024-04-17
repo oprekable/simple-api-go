@@ -6,5 +6,9 @@
 
 tasks:
   - command: make
-
+ports:
+  - name: api
+    port: 3000
+    onOpen: open-browser
+    visibility: public
 
