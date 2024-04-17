@@ -67,20 +67,20 @@ run-app:
 
 .PHONY: test-api-no-filter
 test-api-no-filter:
-	@curl --request GET --url http://localhost:3000/api
+	@curl -s --request GET --url http://localhost:3000/api | jq
 
 .PHONY: test-api-filter-brand
 test-api-filter-brand:
-	@curl --request GET --url 'http://localhost:3000/api?brand=Honda'
+	@curl -s --request GET --url 'http://localhost:3000/api?brand=Honda' | jq
 
 .PHONY: test-api-filter-type
 test-api-filter-type:
-	@curl --request GET --url 'http://localhost:3000/api?type=Beat'
+	@curl -s --request GET --url 'http://localhost:3000/api?type=Beat' | jq
 
 .PHONY: test-api-filter-transmission
 test-api-filter-transmission:
-	@curl --request GET --url 'http://localhost:3000/api?transmission=Manual'
+	@curl -s --request GET --url 'http://localhost:3000/api?transmission=Manual' | jq
 
 .PHONY: test-api-filter-all-fields
 test-api-filter-all-fields:
-	@curl --request GET --url 'http://localhost:3000/api?brand=Honda&type=Beat&transmission=Automatic'
+	@curl -s --request GET --url 'http://localhost:3000/api?brand=Honda&type=Beat&transmission=Automatic' | jq
