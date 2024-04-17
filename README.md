@@ -30,4 +30,8 @@ simple-api-go
   - For type filter `http://localhost:3000/api?type=Beat` do test with run command `make test-api-filter-type`
   - For transmission filter `http://localhost:3000/api?transmission=Manual` do test with run command `make test-api-filter-transmission`
   - For all fields filter `http://localhost:3000/api?brand=Honda&type=Beat&transmission=Automatic` do test with run command `make test-api-filter-all-fields`
-  - 
+
+### Run Everything in GitPod
+- Go to https://gitpod.io/new/?autostart=true#https://github.com/oprekable/simple-api-go and login with your github account
+- Wait until new tab automatically opened URL with address path such https://xxxx.xxx.gitpod.io/
+- Access the API via https://xxxx.xxx.gitpod.io/api
