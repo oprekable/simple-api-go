@@ -1,0 +1,26 @@
+[mysql]
+is_enabled = true
+
+[mysql.write]
+is_enabled = true
+is_migration_enable = true
+host = "localhost"
+port = 13306
+db = "simple_api_go"
+username = "anyuser"
+password = "anypassword"
+max_pool_size = 5
+conn_max_lifetime = "1h"
+max_idle_connection = 5
+
+[mysql.read]
+is_enabled = true
+is_migration_enable = false
+host = "localhost"
+port = 13306
+db = "simple_api_go"
+username = "anyuser"
+password = "anypassword"
+max_pool_size = 5
+conn_max_lifetime = "1h"
+max_idle_connection = 5

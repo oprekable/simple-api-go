@@ -1,0 +1,5 @@
+local:
+  dialect: mysql
+  datasource: anyuser:anypassword@tcp(localhost:13306)/simple_api_go?parseTime=true
+  dir: embeds/migrations/sql/mysql
+  table: migrations

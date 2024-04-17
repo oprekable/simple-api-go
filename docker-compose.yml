@@ -1,0 +1,23 @@
+version: '3.9'
+
+services:
+  simple-api-go-mysql:
+    image: mysql:8.0.33
+    labels:
+      simple-api-go.service.name: "Simple API GO DB"
+      simple-api-go.service.description: "Simple API GO DB"
+      simple-api-go.service.image: "mysql"
+    ports:
+      - "13306:3306"
+    volumes:
+      - ./.docker/db/data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_HOST=%
+      - MYSQL_ROOT_PASSWORD=anypassword
+      - MYSQL_USER=anyuser
+      - MYSQL_PASSWORD=anypassword
+      - MYSQL_DATABASE=simple_api_go
+    command: "--max-connections=4096"
+    healthcheck:
+      test: ["CMD-SHELL", "mysql --password=anypassword -e 'SELECT 1;'"]
+      interval: 20s

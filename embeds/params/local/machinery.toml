@@ -1,0 +1,14 @@
+[machinery]
+is_enabled = "false"
+
+[machinery.redis]
+host = "localhost:26379"
+password = "mypassword"
+db = 0
+max_idle = 3
+idle_timeout = 240
+read_timeout = 15
+write_timeout = 15
+connect_timeout = 15
+normal_tasks_poll_period = 1000
+delayed_tasks_poll_period = 500

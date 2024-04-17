@@ -1,0 +1,7 @@
+[app]
+host = "0.0.0.0"
+port = 3000
+name = "SIMPLA-API-GO"
+secret = ""
+pprof_path = "/dbg"
+is_mock_deactive = "true"

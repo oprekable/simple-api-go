@@ -1,0 +1,167 @@
+[[response_code]]
+error_code = "100001"
+status_code = 500
+
+[[response_code.message]]
+en = "internal server error"
+id = "internal server error"
+
+[[response_code]]
+error_code = "100002"
+status_code = 500
+
+[[response_code.message]]
+en = "database connection error"
+id = "error koneksi ke database"
+
+[[response_code]]
+error_code = "100003"
+status_code = 401
+
+[[response_code.message]]
+id = "akses tidak diizinkan"
+en = "access not authorized"
+
+[[response_code]]
+error_code = "100004"
+status_code = 400
+
+[[response_code.message]]
+id = "header tidak valid atau tidak lengkap"
+en = "invalid/incomplete header"
+
+[[response_code]]
+error_code = "100005"
+status_code = 400
+
+[[response_code.message]]
+id = "request payload tidak valid atau tidak lengkap"
+en = "invalid/incomplete request payload"
+
+[[response_code]]
+error_code = "100006"
+status_code = 500
+
+[[response_code.message]]
+id = "error koneksi ke cache"
+en = "cache connection error"
+
+[[response_code]]
+error_code = "100007"
+status_code = 404
+
+[[response_code.message]]
+id = "error data tidak ditemukan"
+en = "cache data not found"
+
+[[response_code]]
+error_code = "100008"
+status_code = 299
+
+[[response_code.message]]
+en = "endpoint deprecated"
+id = "endpoint tidak digunakan lagi"
+
+[[response_code]]
+error_code = "100009"
+status_code = 400
+
+[[response_code.message]]
+en = "invalid payload"
+id = "payload tidak valid"
+
+[[response_code]]
+error_code = "100010"
+status_code = 400
+
+[[response_code.message]]
+en = "expired signature"
+id = "signature telah kedaluwarsa"
+
+[[response_code]]
+error_code = "100011"
+status_code = 400
+
+[[response_code.message]]
+en = "file size over limit"
+id = "ukuran file melebihi batas"
+
+[[response_code]]
+error_code = "100100"
+status_code = 400
+
+[[response_code.message]]
+id = "akses ditolak"
+en = "access denied"
+
+[[response_code]]
+error_code = "100101"
+status_code = 400
+
+[[response_code.message]]
+id = "beberapa data diperlukan"
+en = "some data required"
+
+[[response_code]]
+error_code = "100102"
+status_code = 401
+
+[[response_code.message]]
+id = "akun tidak terdaftar atau password salah"
+en = "account not registered of invalid password"
+
+[[response_code]]
+error_code = "100103"
+status_code = 429
+
+[[response_code.message]]
+id = "batas percobaan login sudah maksimal , silahkan tunggu 15 menit lagi"
+en = "limit login tried reach the limit. please wait another 15 minutes"
+
+[[response_code]]
+error_code = "100104"
+status_code = 401
+
+[[response_code.message]]
+id = "access token telah kadaluarsa"
+en = "expired access token"
+
+[[response_code]]
+error_code = "100105"
+status_code = 403
+
+[[response_code.message]]
+id = "access token tidak valid"
+en = "invalid access token"
+
+[[response_code]]
+error_code = "100106"
+status_code = 401
+
+[[response_code.message]]
+id = "refresh token telah kadaluarsa"
+en = "expired refresh token"
+
+[[response_code]]
+error_code = "100107"
+status_code = 403
+
+[[response_code.message]]
+id = "refresh token tidak valid"
+en = "invalid refresh token"
+
+[[response_code]]
+error_code = "100108"
+status_code = 400
+
+[[response_code.message]]
+id = "password sebelumnya tidak sesuai"
+en = "invalid old password"
+
+[[response_code]]
+error_code = "100109"
+status_code = 429
+
+[[response_code.message]]
+id = "batas percobaan ganti password sudah maksimal , silahkan tunggu 15 menit lagi"
+en = "limit password change tried reach the limit. please wait another 15 minutes"
