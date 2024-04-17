@@ -1,3 +1,6 @@
+.PHONY: default
+default: docker-up migrate-dev-install migrate-dev-up go-get run-app;
+
 .PHONY: docker-up
 docker-up:
 	@docker compose up -d
@@ -60,6 +63,10 @@ migrate-dev-up:
 .PHONY: migrate-dev-down
 migrate-dev-down:
 	@sql-migrate down -env local -limit=0
+
+.PHONY: go-get
+go-get:
+	@go get
 
 .PHONY: run-app
 run-app:
